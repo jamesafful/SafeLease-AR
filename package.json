@@ -1,0 +1,12 @@
+{
+  "name": "safelease-ar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static, offline-first inspection app producing a dispute-ready PDF. AR optional.",
+  "scripts": {
+    "dev": "http-server ./frontend -p 3000 -c-1 --cors"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "SafeLease-AR",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  },
+  "forwardPorts": [
+    3000
+  ],
+  "postCreateCommand": "npm install",
+  "features": {},
+  "portsAttributes": {
+    "3000": {
+      "label": "SafeLease-AR dev server"
+    }
+  }
+}

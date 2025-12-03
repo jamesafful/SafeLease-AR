@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SafeLease-AR</title>
+  <link rel="stylesheet" href="public/css/app.css" />
+  <!-- jsPDF (loaded on initial load for offline use after caching) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>SafeLease-AR</h1>
+      <span class="badge" id="compat-badge">Detecting features…</span>
+    </div>
+
+    <div class="card">
+      <label for="addr">Property address (optional)</label>
+      <input id="addr" type="text" placeholder="123 Main St, City, State" />
+      <div class="status" id="addr-status"></div>
+    </div>
+
+    <div class="card">
+      <div class="controls">
+        <button id="btn-xr" title="Start AR session (if supported)">Enter AR</button>
+        <button id="btn-photo" disabled>Take photo</button>
+        <button id="btn-export" class="primary">Export PDF</button>
+      </div>
+      <div class="status" id="hint"></div>
+      <div class="canvas-wrap">
+        <canvas id="xr-canvas"></canvas>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 style="margin-top:0">Checklist</h2>
+      <div id="rooms" class="rooms"></div>
+    </div>
+
+    <div class="card">
+      <h2 style="margin-top:0">Photos (<span id="photo-count">0</span>)</h2>
+      <div id="gallery" class="gallery"></div>
+      <div class="status" id="pdf-estimate"></div>
+    </div>
+
+    <div class="footer">
+      SafeLease-AR v1.0 • <span id="meta"></span>
+    </div>
+  </div>
+
+  <script type="module" src="src/app.js"></script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./service-worker.js').catch(console.error);
+      });
+    }
+  </script>
+</body>
+</html>

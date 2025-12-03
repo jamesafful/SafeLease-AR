@@ -1,0 +1,78 @@
+{
+  "address": "",
+  "rooms": [
+    {
+      "name": "Entry",
+      "items": [
+        {
+          "id": "Entry:door",
+          "title": "Front door condition"
+        },
+        {
+          "id": "Entry:locks",
+          "title": "Locks and keys verified"
+        }
+      ]
+    },
+    {
+      "name": "Kitchen",
+      "items": [
+        {
+          "id": "Kitchen:gfci",
+          "title": "Test GFCI outlet"
+        },
+        {
+          "id": "Kitchen:sink",
+          "title": "Under-sink leak check"
+        },
+        {
+          "id": "Kitchen:appliances",
+          "title": "Appliances working (fridge, oven, fan)"
+        }
+      ]
+    },
+    {
+      "name": "Bathroom",
+      "items": [
+        {
+          "id": "Bathroom:fan",
+          "title": "Fan & ventilation"
+        },
+        {
+          "id": "Bathroom:leaks",
+          "title": "Toilet/tub/shower leaks"
+        },
+        {
+          "id": "Bathroom:water",
+          "title": "Hot water within reasonable time"
+        }
+      ]
+    },
+    {
+      "name": "Bedroom",
+      "items": [
+        {
+          "id": "Bedroom:windows",
+          "title": "Windows/locks/screens"
+        },
+        {
+          "id": "Bedroom:outlets",
+          "title": "Outlets and light switches"
+        }
+      ]
+    },
+    {
+      "name": "Living Room",
+      "items": [
+        {
+          "id": "Living:smoke",
+          "title": "Smoke/CO detector present & test"
+        },
+        {
+          "id": "Living:damage",
+          "title": "Visible damage (marks, holes, stains)"
+        }
+      ]
+    }
+  ]
+}
