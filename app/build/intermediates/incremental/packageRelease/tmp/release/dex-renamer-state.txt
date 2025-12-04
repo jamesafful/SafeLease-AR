@@ -1,0 +1,4 @@
+#Thu Dec 04 08:54:55 UTC 2025
+base.0=/workspaces/SafeLease-AR/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

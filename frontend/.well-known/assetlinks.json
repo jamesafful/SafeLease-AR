@@ -3,9 +3,9 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.yourorg.safeleasear",
+      "package_name": "dev.pages.safelease_ar.twa",
       "sha256_cert_fingerprints": [
-        "AA:BB:CC:DD:EE:FF:00:11:22:33:44:55:66:77:88:99:AA:BB:CC:DD:EE:FF:00:11:22:33:44:55:66:77:88:99"
+        "B7:F7:1A:55:DF:7B:AB:46:2A:9A:9C:AD:7B:50:48:2F:27:50:EB:F1:61:E5:2C:F3:E6:98:43:34:94:96:27:D8"
       ]
     }
   }
