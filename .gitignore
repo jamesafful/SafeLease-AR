@@ -1,39 +1,31 @@
-# ----- Android/Gradle
-/.gradle/
-/build/
-**/build/
+# Android / Gradle
 local.properties
 *.iml
 .idea/
 .gradle/
-.gradle/*
+**/build/
 
-# Gradle wrapper: KEEP gradlew, gradlew.bat, and gradle/wrapper/** tracked
-# (no ignore rules needed for those)
+# Keep these TRACKED:
+# gradlew, gradlew.bat, gradle/wrapper/**
 
-# Signing keys (NEVER commit)
+# Node / Web
+node_modules/
+frontend/**/dist/
+frontend/**/build/
+
+# Outputs (never commit)
+*.apk
+*.aab
+*.idsig
+manifest-checksum.txt
+
+# Keystores / certs (never commit)
 *.jks
 *.keystore
 *.pem
 *.p12
 android.keystore
 keystore.properties
-**/signing/**
-
-# Output artifacts (NEVER commit)
-*.apk
-*.aab
-*.idsig
-manifest-checksum.txt
-
-# App module: DO NOT ignore the module itself
-# Allow all source under app/
-# (no "app*" rule!)
-
-# Node / Web
-node_modules/
-frontend/**/dist/
-frontend/**/build/
 
 # OS/Editor
 .DS_Store
